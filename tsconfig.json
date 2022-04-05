@@ -18,6 +18,9 @@
       "@libs/*": [
         "libs/*"
       ],
+      "@types/*": [
+        "types/*"
+      ],
     },
     "incremental": true
   },
