@@ -8,6 +8,8 @@ export interface IBook {
     rating: number,
     order: number,
     image: string,
+    _createdAt: Date,
+    _updatedAt: Date,
     category: ICategory[],
     link: string,
 }
@@ -22,6 +24,8 @@ export interface IBookResponse {
     rating: number,
     order: number,
     image: string,
+    released: Date,
+    updated: Date,
     categoryId: String[],
     link: string,
 }
