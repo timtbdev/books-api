@@ -13,7 +13,6 @@ export interface IBook {
     category: ICategory[],
     link: string,
 }
-
 export interface IBookResponse {
     id: string,
     title: string,
@@ -28,6 +27,19 @@ export interface IBookResponse {
     updated: Date,
     categoryId: String[],
     link: string,
+}
+
+export interface IBookCategory {
+    _id: string,
+    category: ICategory[],
+}
+export interface IBookCategoryCrossRef {
+    bookId: string,
+    categoryId: string,
+}
+
+export interface IBookCategoryResponse {
+    bookIdWithCategoryId: IBookCategoryCrossRef[]
 }
 
 export interface ISlug {
